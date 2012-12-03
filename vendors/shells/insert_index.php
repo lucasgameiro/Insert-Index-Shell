@@ -33,11 +33,11 @@ class InsertIndexShell extends Shell
             {
                 if($modelObj->query("ALTER TABLE `{$modelObj->tablePrefix}{$modelObj->table}` ADD INDEX (`{$relacionamento['foreignKey']}`)"))
                 {
-                    $this->out("Indice {$relacionamento['foreignKey']} adicionado em {$modelObj->table}");
+                    $this->out("Success: A index was created for {$modelObj->table}.{$relacionamento['foreignKey']}");
                 }
                 else
                 {
-                    $this->out("impossivel adicionar indice {$relacionamento['foreignKey']} em {$modelObj->table}");
+                    $this->out("Error: Problem for create an index for {$modelObj->table}.{$relacionamento['foreignKey']}");
                 }
             }
         }
