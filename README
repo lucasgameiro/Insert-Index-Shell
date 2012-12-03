@@ -1,6 +1,3 @@
-To install put the insert_index.php in the shells folder.
+Create a MySQL index for Models with relations 
 
-To run use: '~$ cake insert_index'
-
---
-Lucas Gameiro
+To install just put the insert_index.php in the shell folder and use it as a cake shell.
